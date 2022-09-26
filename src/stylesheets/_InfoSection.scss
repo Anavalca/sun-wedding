@@ -1,7 +1,13 @@
-.infoBackground {
-  top: 0;
-  width: 100%;
-  height: 200px;
-  background-color: rgb(19, 21, 105);
+.infoSection{
+display: flex;
+flex-direction: column;
+  img{
+    width: 100%;
+  }
 
+  .infoBackground {
+    width: 100%;
+    height: 300px;
+    background-color:#87c8f2;
+  }
 }
