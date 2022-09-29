@@ -1,5 +1,5 @@
 import img from '../images/waves.svg'
-import img2 from '../images/waves2.svg'
+import img2 from '../images/beach.png'
 
 export const InfoSection = () => {
 

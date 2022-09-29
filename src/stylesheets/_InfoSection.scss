@@ -1,13 +1,13 @@
 .infoSection{
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   img{
     width: 100%;
   }
 
   .infoBackground {
     width: 100%;
-    height: 300px;
-    background-color:#87c8f2;
+    height: 150px;
+    background-color:#5fd1d1;
   }
 }
