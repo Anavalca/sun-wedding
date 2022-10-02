@@ -1,4 +1,4 @@
-import { InfoSection } from './InfoSection';
+import { WeddingSection } from './WeddingSection';
 import { HotelSection } from './HotelSection';
 import { Contact } from './Contact';
 
@@ -6,7 +6,7 @@ export const Main = () => {
 
   return (
     <>
-      <InfoSection />
+      <WeddingSection />
       <HotelSection/>
       <Contact />
     </>

@@ -16,16 +16,5 @@ html {
   scroll-behavior: smooth;
   font-family: $textFont;
   font-size: 14px;
-  font-weight: 300;
-}
-
-.sectionTitle {
   font-weight: 200;
-  font-size: 4rem;
-  font-family: $titleFont;
-
-  @include forTablet {
-    font-size: 5rem;
-  }
-
 }
