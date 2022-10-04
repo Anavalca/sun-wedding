@@ -1,4 +1,4 @@
-import img from '../images/selva.svg'
+import img from '../images/jungle.png'
 
 export const Contact = () => {
 

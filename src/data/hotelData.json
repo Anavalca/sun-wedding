@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "icon": "./images/hotel.png",
+    "title": "Hotel Agaró",
+    "web": "https://www.hotelagarochipiona.com/",
+    "price": "90€/noche - habitación doble",
+    "info":"Contaremos con un código de descuento para los invitados (10%)"    
+  },
+  {
+    "id": 2,
+    "icon": "./images/hotel.png",
+    "title": "Hotel Paquita",
+    "web": "https://hotel-paquita.reservahotel.top/",
+    "price": "40€/noche - habitación doble",
+    "info":"Es el más económico. Ubicado en el centro." ,
+    "full":true
+  },
+  {
+    "id": 3,
+    "icon": "./images/hotel.png",
+    "title": "Hotel Monterrey",
+    "web": "https://www.monterreycostahotel.com/",
+    "price": "Habitación con vistas al mar 88€, estándar 79€ e interiores 67",
+    "info":"Habrá un código de descuento adicional"    
+  },
+  {
+    "id": 4,
+    "icon": "./images/apartament.png",
+    "title": "Marina Luz Apartamentos",
+    "web": "https://marinaluz.es/",
+    "price": "Los precios de 2023 los sabremos en diciembre",
+    "info":"Hay habitaciones dobles y apartamentos. Piden estancia mínima de 4 noches." 
+  },
+  {
+    "id": 5,
+    "icon": "./images/apartament.png",
+    "title": "Apartamentos La plaza",
+    "web": "https://apartamentoschipiona.com/",
+    "price": "Apartamento con cocina - 240€/pareja el fin de semana",
+    "info":"Habitación doble - 180€/pareja el fin de semana" 
+  },
+  {
+    "id": 6,
+    "icon": "./images/hostel.png",
+    "title": "Hostal Gran Capitán",
+    "web": "http://www.hostalgrancapitan.com/",
+    "price": "Habitaciones dobles - 65€ noche"
+  }
+]
