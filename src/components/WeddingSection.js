@@ -1,14 +1,26 @@
-import img from '../images/waves2.png'
-import icon1 from '../icons/calendar.png'
-import icon2 from '../icons/wall-clock.png'
-import icon3 from '../icons/location.png'
-import icon4 from '../icons/bus.png'
+import imgage from '../images/waves2.png'
+import calendarIcon from '../icons/calendar.png'
+import clockIcon from '../icons/wall-clock.png'
+import locationIcon from '../icons/location.png'
+import busIcon from '../icons/bus.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { useState } from "react";
+import Modal from 'react-modal'
+import { Map } from './Map'
 
 export const WeddingSection = () => {
+  
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsOpen(!isOpen);
+  }
 
   return (
     <div className='text-white'>
-      <img alt="" src={img} />
+      <img alt="" src={imgage} />
       <div className='pt-24 pb-4 w-full bg-sea-blue flex flex-row justify-center items-start' id="wedding">
         <div className='w-96 pr-7 text-right'>
           <h2 className='text-6xl pb-4 font-extralight'>LA<br></br>BODA</h2>
@@ -16,27 +28,46 @@ export const WeddingSection = () => {
         </div>
         <div className='w-96 pl-7 border-l-2 flex flex-col font-light uppercase'>
           <div className='flex flex-row items-center pb-8'>
-            <img alt="" src={icon1} className="w-14" />
+            <img alt="" src={calendarIcon} className="w-14" />
             <p className='pl-4 text-2xl'>3 de junio de 2023</p>
           </div>
           <div className='flex flex-row items-center pb-8'>
-            <img alt="" src={icon2} className="w-14" />
+            <img alt="" src={clockIcon} className="w-14" />
             <p className='pl-4 text-2xl'>13:00</p>
           </div>
           <div className='flex flex-row items-center pb-8'>
-            <img alt="" src={icon3} className="w-14" />
+            <img alt="" src={locationIcon} className="w-14" />
             <div className='pl-4'>
               <p className='text-2xl'>SAAM Club de Mar</p>
-              <p className='text-sm capitalize'>Pago Valdeconejos 19, Chipiona (Cádiz)</p>
-              <p className='underline decoration-wavy text-sm font-semibold normal-case'>Como llegar</p>
+              <p className='capitalize'>Chipiona (Cádiz)</p>
+              <button className='underline decoration-wavy text-sm font-semibold normal-case tracking-wide'
+                onClick={toggleModal}>Consultar ubicación</button>
             </div>
           </div>
           <div className='flex flex-row items-center'>
-            <img alt="" src={icon4} className="w-14" />
-            <p className='pl-4 text-sm normal-case'>Horario y lugar de recogida del autobús por determinar</p>
+            <img alt="" src={busIcon} className="w-14" />
+            <p className='pl-4 normal-case'>Horario y lugar de recogida del autobús por determinar</p>
           </div>
         </div>
       </div>
+      {/* POP UP */}
+      <Modal
+        isOpen={isOpen}
+        onRequestClose={toggleModal}
+        contentLabel='HOLA'
+        ariaHideApp={false}
+      >
+        <Map
+          mapCoordenateA="36.75188148513783"
+          mapCoordenateB="-6.412953117657391"
+          zoom="13"
+          mapTitle="SAAM CLUB DE MAR"
+          mapDescription="Pago Valdeconejos, 19, 11550 Chipiona, Cádiz"
+          url="https://www.google.es/maps/place/SAAM+Club+de+Mar/@36.7518353,-6.4150989,17z/data=!3m1!4b1!4m5!3m4!1s0xd0e756381e89fc1:0x1738162071e506d1!8m2!3d36.7518353!4d-6.4129102?hl=es" />
+        <button className="popUpInfoContainer" onClick={toggleModal}>
+          <FontAwesomeIcon icon={faXmark} className='fa-l' />
+        </button>
+      </Modal>
     </div>
   );
 }

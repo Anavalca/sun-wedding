@@ -11,9 +11,12 @@ module.exports = {
       'sand-yellow': '#ede1c3',
       'jungle-green': '#027c7a',
       'grey':'#4b4e50',
-      'white-opacity':'#fcf5e8d6',
+      'yellow-opacity':'#fcf5e8',
+      'white-opacity':'#ffffffa1',
       'red':"#ff5b5b",
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ]
 }
