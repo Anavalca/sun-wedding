@@ -25,21 +25,21 @@ export const Countdown = () => {
 
   return (
     <div className='flex flex-row text-grey font-light'>
-      <div className='flex flex-col items-center justify-center w-24 h-24 m-2 bg-white rounded-full'>
-        <p className="text-2xl">{days}</p>
-          <p className='text-sm tracking-wide'>días</p>
+      <div className='flex flex-col items-center justify-center w-20 h-20 lg:w-24 lg:h-24 m-1 lg:m-2 bg-white rounded-full'>
+        <p className="text-xl lg:text-2xl">{days}</p>
+          <p className='text-xs lg:text-sm'>días</p>
       </div>
-      <div className='flex flex-col items-center justify-center w-24 h-24 m-2 bg-white rounded-full'>
-        <p className="text-2xl">{hours}</p>
-          <p className='text-sm tracking-wide'>horas</p>
+      <div className='flex flex-col items-center justify-center w-20 h-20 lg:w-24 lg:h-24 m-1 lg:m-2 bg-white rounded-full'>
+        <p className="text-xl lg:text-2xl">{hours}</p>
+          <p className='text-xs lg:text-sm'>horas</p>
       </div>
-      <div className='flex flex-col items-center justify-center w-24 h-24 m-2 bg-white rounded-full'>
-        <p className="text-2xl tracking-wide">{minutes}</p>
-          <p className='text-sm tracking-wide'>minutos</p>
+      <div className='flex flex-col items-center justify-center w-20 h-20 lg:w-24 lg:h-24 m-1 lg:m-2 bg-white rounded-full'>
+        <p className="text-xl lg:text-2xl">{minutes}</p>
+          <p className='text-xs lg:text-sm'>minutos</p>
       </div>
-      <div className='flex flex-col items-center justify-center w-24 h-24 m-2 bg-white rounded-full'>
-        <p className="text-2xl">{seconds}</p>
-          <p className='text-sm tracking-wide'>segundos</p>
+      <div className='flex flex-col items-center justify-center w-20 h-20 lg:w-24 lg:h-24 m-1 lg:m-2 bg-white rounded-full'>
+        <p className="text-xl lg:text-2xl">{seconds}</p>
+          <p className='text-xs lg:text-sm'>segundos</p>
       </div>
     </div>
   );

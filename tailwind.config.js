@@ -10,11 +10,16 @@ module.exports = {
       'sea-blue': '#5fd1d1',
       'sand-yellow': '#ede1c3',
       'jungle-green': '#027c7a',
-      'grey':'#4b4e50',
-      'yellow-opacity':'#fcf5e8',
-      'white-opacity':'#ffffffa1',
-      'red':"#ff5b5b",
+      'grey': '#4b4e50',
+      'yellow-opacity': '#fcf5e8',
+      'white-opacity': '#ffffffa1',
+      'red': "#ff5b5b",
     },
+    extend: {
+      height: {
+        '85': '85vh',
+      },
+    }
   },
   plugins: [
     require('@tailwindcss/forms')

@@ -1,27 +1,91 @@
 import img from '../images/jungle.png'
+import contactIcon from '../icons/form.png'
+import emailjs from 'emailjs-com';
+import { useState } from "react";
+
+const YOUR_SERVICE_ID = "service_jb41tc9";
+const YOUR_TEMPLATE_ID = "template_e9uaova";
+const YOUR_USER_ID = "user_priKHmSsrK6ZMxp3YGXJ4";
+
+export function validateEmail(email) {
+  const pattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return String(email).toLowerCase().match(pattern) !== null;
+}
 
 export const Contact = () => {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setmessage] = useState('');
+  const [submittedForm, setSubmittedForm] = useState(false);
+
+  const enableSubmit = name && email && message;
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    debugger;
+
+    if (enableSubmit && !submittedForm) {
+      emailjs.sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, e.target, YOUR_USER_ID)
+        .then((result) => {
+          setSubmittedForm(true);
+        }, (error) => {
+          alert('Ha ocurrido un error al enviar el formualrio. Por favor, vuelve a intentarlo más tarde');
+        });
+    }
+  }
 
   return (
     <div className='contactSection'>
       <img alt="" src={img} />
-      <div className='py-6 w-full bg-jungle-green flex flex-col items-center text-white' id="contact">
-
-        <form className="mt-12 w-1/2" action="" method="POST">
-        <div class="relative" >
-            <input id="name" name="name" type="text" className="peer h-10 w-full bg-jungle-green border-0 border-b-2 border-white placeholder-transparent focus:placeholder:text-white-opacity focus:outline-none focus:border-b-2 focus:border-white" placeholder="Laura García" />
-            <label for="email" className="absolute left-0 -top-4 text-white transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-white peer-focus:text-sm">Nombre y apellidos</label>
+      <div className='py-12 w-full bg-jungle-green flex flex-row-reverse justify-center text-white' id="contact">
+        <div className='w-96 flex flex-col justify-center border-l-2 ml-9 pl-9'>
+          <img alt="" src={contactIcon} className="w-16 pb-4" />
+          <h2 className='text-5xl font-extralight uppercase pb-4'>Formulario <br></br>de contacto</h2>
+          <p className='font-light'>¿Tienes dudas? Puedes ponerte en contacto con nosotros o confirmar tu asistencia rellenando el siguiente formulario.</p>
+        </div>
+        <form className="w-96" onSubmit={sendEmail}>
+          <div class="relative" >
+            <input
+              className="peer h-10 w-full bg-jungle-green border-0 border-b-2 border-white placeholder-transparent focus:placeholder:text-white-opacity focus:outline-none focus:border-b-2 focus:border-white" placeholder="Laura García"
+              id="name"
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              name="contact_name"
+            />
+            <label for="name" className="absolute left-0 -top-4 text-white transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-white peer-focus:text-sm">Nombre y apellidos</label>
           </div>
-          <div class="relative mt-11" >
-            <input id="email" name="email" type="email" className="peer h-10 w-full bg-jungle-green border-0 border-b-2 border-white placeholder-transparent focus:placeholder:text-white-opacity focus:outline-none focus:border-b-2 focus:border-white" placeholder="laura192@gmail.com" />
+          <div class="relative mt-12" >
+            <input
+              className="peer h-10 w-full bg-jungle-green border-0 border-b-2 border-white placeholder-transparent focus:placeholder:text-white-opacity focus:outline-none focus:border-b-2 focus:border-white" placeholder="laura192@gmail.com"
+              id="email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              name="contact_email"
+            />
             <label for="email" className="absolute left-0 -top-4 text-white transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-white peer-focus:text-sm">Email</label>
           </div>
-          <div class="relative mt-10" >
+          <div class="relative mt-14" >
             <label for="email" className="">Mensaje</label>
-            <textarea id="message" name="message" type="text" className="peer h-20 w-full bg-jungle-green border-2 border-white placeholder-transparent focus:outline-none focus:border-white"/>
+            <textarea
+              className="mt-1 peer h-32 w-full bg-jungle-green border-2 border-white placeholder:text-white-opacity focus:outline-none focus:border-white"
+              id="message"
+              type="text"
+              placeholder="Intolerancias alimenicias, plazas que necesitas para el bus, etc."
+              value={message}
+              onChange={(e) => setmessage(e.target.value)}
+              name="message"
+            />
           </div>
 
-          <input type="sumbit" value="Sign in" class="mt-5 px-4 py-2 rounded text-jungle-green hover:bg-rose-400 font-semibold text-center block w-full focus:outline-none focus:ring focus:ring-offset-2 focus:ring-rose-500 focus:ring-opacity-80 cursor-pointer" />
+          <input
+          id="submit"
+          type="submit"
+          value={`${submittedForm ? 'FORMULARIO ENVIADO' : 'ENVIAR'}`}
+          disabled={!enableSubmit}  
+          class="mt-5 px-4 py-2 rounded text-jungle-green bg-white font-semibold text-center block w-full focus:outline-none focus:ring focus:ring-offset-2 focus:ring-rose-500 focus:ring-opacity-80 cursor-pointer" />
         </form>
 
       </div>
