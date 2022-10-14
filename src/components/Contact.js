@@ -1,4 +1,5 @@
-import img from '../images/jungle.png'
+import jungleImgMobile from '../images/jungle-m.png'
+import jungleImg from '../images/jungle.png'
 import contactIcon from '../icons/form.png'
 import emailjs from 'emailjs-com';
 import { useState } from "react";
@@ -36,15 +37,16 @@ export const Contact = () => {
   }
 
   return (
-    <div className='contactSection'>
-      <img alt="" src={img} />
-      <div className='py-12 w-full bg-jungle-green flex flex-row-reverse justify-center text-white' id="contact">
-        <div className='w-96 flex flex-col justify-center border-l-2 ml-9 pl-9'>
+    <div className='contactSection  bg-jungle-green'>
+      <img alt="" src={jungleImgMobile} className='lg:hidden'/>
+      <img alt="" src={jungleImg} className='hidden lg:block'/>
+      <div className='p-10 py-18 lg:pb-20 w-full flex flex-col  lg:flex-row-reverse justify-center text-white' id="contact">
+        <div className='w-full lg:w-96 flex flex-col justify-center lg:border-l-2 lg:ml-9 lg:pl-9 pb-12 lg:pb-0'>
           <img alt="" src={contactIcon} className="w-16 pb-4" />
-          <h2 className='text-5xl font-extralight uppercase pb-4'>Formulario <br></br>de contacto</h2>
+          <h2 className='text-4xl lg:text-5xl font-extralight uppercase pb-4'>Formulario <br></br>de contacto</h2>
           <p className='font-light'>¿Tienes dudas? Puedes ponerte en contacto con nosotros o confirmar tu asistencia rellenando el siguiente formulario.</p>
         </div>
-        <form className="w-96" onSubmit={sendEmail}>
+        <form className="w-full lg:w-96 border-2 lg:border-0 p-6 pt-8 lg:p-0" onSubmit={sendEmail}>
           <div class="relative" >
             <input
               className="peer h-10 w-full bg-jungle-green border-0 border-b-2 border-white placeholder-transparent focus:placeholder:text-white-opacity focus:outline-none focus:border-b-2 focus:border-white" placeholder="Laura García"
@@ -70,7 +72,7 @@ export const Contact = () => {
           <div class="relative mt-14" >
             <label for="email" className="">Mensaje</label>
             <textarea
-              className="mt-1 peer h-32 w-full bg-jungle-green border-2 border-white placeholder:text-white-opacity focus:outline-none focus:border-white"
+              className="mt-1 peer h-36 w-full bg-jungle-green border-2 border-white placeholder:text-white-opacity focus:outline-none focus:border-white"
               id="message"
               type="text"
               placeholder="Intolerancias alimenicias, plazas que necesitas para el bus, etc."
