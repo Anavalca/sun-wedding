@@ -40,10 +40,10 @@ export const Contact = () => {
     <div className='contactSection  bg-jungle-green' id="contact">
       <img alt="" src={jungleImgMobile} className='lg:hidden'/>
       <img alt="" src={jungleImg} className='hidden lg:block'/>
-      <div className='p-8 py-18 lg:pb-20 w-full flex flex-col  lg:flex-row-reverse justify-center text-white' >
+      <div className='p-8 py-18 lg:pb-20 w-full flex flex-col  lg:flex-row-reverse justify-center text-white text-center lg:text-left' >
         <div className='w-full lg:w-96 flex flex-col justify-center lg:border-l-2 lg:ml-9 lg:pl-9 pb-12 lg:pb-0'>
           <div className='flex items-center w-full  pb-5 lg:pb-2'>
-            <img alt="" src={contactIcon} className="w-16 mr-3" />
+            <img alt="" src={contactIcon} className="w-16 mr-3 hidden lg:block" />
             <h2 className='text-4xl font-bold'>¿Tienes dudas? Escríbenos</h2>
           </div>
           <p className='font-light'>Puedes ponerte en contacto con nosotros o confirmar tu asistencia rellenando el siguiente formulario.</p>
