@@ -71,8 +71,8 @@ export const Contact = () => {
             />
             <label for="email" className="absolute left-0 -top-4 text-white transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-white peer-focus:text-sm">Email</label>
           </div>
-          <div class="relative mt-14" >
-            <label for="email" className="">Mensaje</label>
+          <div class="relative mt-14 text-left" >
+            <label for="email">Mensaje</label>
             <textarea
               className="mt-1 peer h-36 w-full bg-jungle-green border-2 border-white placeholder:text-white-opacity focus:outline-none focus:border-white"
               id="message"
