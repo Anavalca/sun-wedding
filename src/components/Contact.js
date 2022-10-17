@@ -37,14 +37,16 @@ export const Contact = () => {
   }
 
   return (
-    <div className='contactSection  bg-jungle-green'>
+    <div className='contactSection  bg-jungle-green' id="contact">
       <img alt="" src={jungleImgMobile} className='lg:hidden'/>
       <img alt="" src={jungleImg} className='hidden lg:block'/>
-      <div className='p-10 py-18 lg:pb-20 w-full flex flex-col  lg:flex-row-reverse justify-center text-white' id="contact">
+      <div className='p-8 py-18 lg:pb-20 w-full flex flex-col  lg:flex-row-reverse justify-center text-white' >
         <div className='w-full lg:w-96 flex flex-col justify-center lg:border-l-2 lg:ml-9 lg:pl-9 pb-12 lg:pb-0'>
-          <img alt="" src={contactIcon} className="w-16 pb-4" />
-          <h2 className='text-4xl lg:text-5xl font-extralight uppercase pb-4'>Formulario <br></br>de contacto</h2>
-          <p className='font-light'>¿Tienes dudas? Puedes ponerte en contacto con nosotros o confirmar tu asistencia rellenando el siguiente formulario.</p>
+          <div className='flex items-center w-full  pb-5 lg:pb-2'>
+            <img alt="" src={contactIcon} className="w-16 mr-3" />
+            <h2 className='text-4xl font-bold'>¿Tienes dudas? Escríbenos</h2>
+          </div>
+          <p className='font-light'>Puedes ponerte en contacto con nosotros o confirmar tu asistencia rellenando el siguiente formulario.</p>
         </div>
         <form className="w-full lg:w-96 border-2 lg:border-0 p-6 pt-8 lg:p-0" onSubmit={sendEmail}>
           <div class="relative" >

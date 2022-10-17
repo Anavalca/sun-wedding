@@ -16,9 +16,16 @@ module.exports = {
       'red': "#ff5b5b",
     },
     extend: {
+      fontFamily: {
+        'sacramento': ['Sacramento', 'cursive'],
+      },
       height: {
         '85': '85vh',
       },
+      width: {
+        '800': '800px',
+        '85':'21rem'
+      }
     }
   },
   plugins: [

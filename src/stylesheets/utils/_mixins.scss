@@ -11,7 +11,6 @@ $textFont:'Poppins', sans-serif;
 $numberFont: 'Raleway', sans-serif;
 
 
-
 @mixin forTablet {
   @media all and (min-width: $tablet) {
     @content;

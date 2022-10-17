@@ -14,14 +14,20 @@ ul {
 
 html {
   scroll-behavior: smooth;
-  font-family: $textFont;
+  // font-family: $textFont;
+ 
+  font-family: 'Quicksand', sans-serif;
+
   font-size: 14px;
+
   @include forPc {
     font-size: 15px;
   }
+
   font-weight: 200;
 }
 
-input, textarea {
+input,
+textarea {
   --tw-ring-shadow: 0 0 #000 !important;
 }

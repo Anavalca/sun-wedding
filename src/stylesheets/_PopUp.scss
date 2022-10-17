@@ -19,8 +19,12 @@
 }
 
 .ReactModal__Content{
-  width: 70%;
+  width: 80%;
   height: 60%;
-  padding: 30px 10px 10px 10px !important;
+  padding: 30px 9px 9px 9px !important;
   margin: auto;
+}
+
+.leaflet-container .leaflet-popup-content span{
+  width: 200px;
 }

@@ -20,35 +20,36 @@ export const WeddingSection = () => {
   }
 
   return (
-    <div className='text-white bg-sea-blue'>
+    <div className='text-white bg-sea-blue' id='wedding'>
       <img alt="" src={wavesImgMobile} className='lg:hidden'/>
       <img alt="" src={wavesImg} className='hidden lg:block'/>
-      <div className='p-10 py-20 lg:pt-24 lg:pb-4 lg:w-full flex flex-col lg:flex-row justify-center items-start' id="wedding">
-        <div className='w-full lg:w-96 lg:pr-7 pb-6 lg:pb-0 text-left lg:text-right border-b-2 lg:border-0'>
-          <h2 className='text-5xl lg:text-6xl pb-4 font-extralight'>LA<br></br>BODA</h2>
-          <p className='font-light'>No podemos celebrar este día tan especial sin ti, por eso hemos montado una super fiesta en la playa a la que estás invitado. <br></br> ¿Te apuntas?</p>
+      <div className='p-8 pt-20 lg:pt-24 lg:pb-4 lg:m-auto lg:w-800 flex flex-col lg:flex-row justify-center items-start' id="wedding">
+        <div className='w-full lg:w-1/2 lg:pr-7 pb-10 lg:pb-0 text-center lg:text-left lg:text-right'>
+          <h2 className='text-4xl lg:text-5xl pb-5 lg:pb-2 font-bold lg:pl-9'>¡Nos vamos de boda!</h2>
+          <p className='font-light pb-3'>No podemos celebrar este día tan especial sin ti, por eso hemos montado una super fiesta en la playa a la que estás invitado.</p>
+          <p className='font-light'>¡No te preocupes por nada! Iremos en autobús hasta el restaurante donde se celebrará todo el evento. ¿Te apuntas?</p>
+          
         </div>
-        <div className='w-full lg:w-96 lg:pl-7 pt-6 lg:pt-0 lg:border-l-2 flex flex-col font-light uppercase'>
-          <div className='flex flex-row items-center pb-8'>
-            <img alt="" src={calendarIcon} className="w-14" />
-            <p className='pl-4 text-xl lg:text-2xl'>3 de junio de 2023</p>
+        <div className='w-full lg:w-1/2 lg:pl-7 pt-6 lg:pt-0 lg:border-l-2 flex flex-wrap lg:flex-col font-medium text-center lg:text-left'>
+          <div className='w-1/2 lg:w-auto flex flex-col lg:flex-row items-center pb-11 lg:pb-7'>
+            <img alt="" src={calendarIcon} className="w-16 lg:w-14 pb-2 lg:pb-0" />
+            <p className='lg:pl-4 text-lg lg:text-xl lg:text-2xl'>3 de junio de 2023</p>
           </div>
-          <div className='flex flex-row items-center pb-8'>
-            <img alt="" src={clockIcon} className="w-14" />
-            <p className='pl-4 text-xl lg:text-2xl'>13:00</p>
+          <div className='w-1/2 lg:w-auto flex flex-col lg:flex-row items-center pb-11 lg:pb-7'>
+            <img alt="" src={clockIcon} className="w-16 lg:w-14 pb-2 lg:pb-0" />
+            <p className='lg:pl-4 text-xl lg:text-2xl'>13:00</p>
           </div>
-          <div className='flex flex-row items-center pb-8'>
-            <img alt="" src={locationIcon} className="w-14" />
-            <div className='pl-4'>
-              <p className='text-xl lg:text-2xl'>SAAM Club de Mar</p>
-              <p className='capitalize'>Chipiona (Cádiz)</p>
+          <div className='w-1/2 lg:w-auto flex flex-col lg:flex-row items-center pb-11 lg:pb-7'>
+            <img alt="" src={locationIcon} className="w-16 lg:w-14 pb-2 lg:pb-0" />
+            <div className='lg:pl-4'>
+              <p className='text-xl lg:text-2xl'>Saam Club de Mar</p>
               <button className='underline decoration-wavy text-sm font-semibold normal-case tracking-wide'
                 onClick={toggleModal}>Consultar ubicación</button>
             </div>
           </div>
-          <div className='flex flex-row items-center'>
-            <img alt="" src={busIcon} className="w-14" />
-            <p className='pl-4 normal-case'>Horario y lugar de recogida del autobús por determinar</p>
+          <div className='w-1/2 lg:w-auto flex flex-col lg:flex-row items-center'>
+            <img alt="" src={busIcon} className="w-16 lg:w-14 pb-2 lg:pb-0" />
+            <p className='lg:pl-4 normal-case'>Horario y lugar de recogida del autobús por determinar</p>
           </div>
         </div>
       </div>
