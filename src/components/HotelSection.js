@@ -6,10 +6,10 @@ import { HotelItem } from './HotelItem';
 export const HotelSection = () => {
 
   return (
-    <div className='text-grey bg-sand-yellow' >
+    <div className='text-grey bg-sand-yellow' id="hotel" >
       <img alt="" src={beachImgMobile} className='lg:hidden'/>
       <img alt="" src={beachImg} className='hidden lg:block'/>
-      <div className='py-20 w-full p-8 flex flex-col items-center'  id="hotel">
+      <div className='py-20 w-full p-8 flex flex-col items-center'>
         <h2 className='text-4xl lg:text-5xl font-bold'>¿Dónde duermo?</h2>
         <div className='w-32 mt-5 mb-1'></div>
         <p className='w-full lg:w-3/6 font-normal text-center'>Para asistir a nuestra boda y poder disfrutar de un fin de semana en Chipona, os ofrecemos los siguientes alojamientos con los que ya hemos contactado previamente.</p>

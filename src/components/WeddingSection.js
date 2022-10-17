@@ -33,23 +33,23 @@ export const WeddingSection = () => {
         <div className='w-full lg:w-1/2 lg:pl-7 pt-6 lg:pt-0 lg:border-l-2 flex flex-wrap lg:flex-col font-medium text-center lg:text-left'>
           <div className='w-1/2 lg:w-auto flex flex-col lg:flex-row items-center pb-11 lg:pb-7'>
             <img alt="" src={calendarIcon} className="w-16 lg:w-14 pb-2 lg:pb-0" />
-            <p className='lg:pl-4 text-lg lg:text-xl lg:text-2xl'>3 de junio de 2023</p>
+            <p className='lg:pl-4 text-lg lg:text-2xl'>3 de junio de 2023</p>
           </div>
           <div className='w-1/2 lg:w-auto flex flex-col lg:flex-row items-center pb-11 lg:pb-7'>
             <img alt="" src={clockIcon} className="w-16 lg:w-14 pb-2 lg:pb-0" />
-            <p className='lg:pl-4 text-xl lg:text-2xl'>13:00</p>
+            <p className='lg:pl-4 text-lg lg:text-2xl'>13:00</p>
           </div>
           <div className='w-1/2 lg:w-auto flex flex-col lg:flex-row items-center pb-11 lg:pb-7'>
             <img alt="" src={locationIcon} className="w-16 lg:w-14 pb-2 lg:pb-0" />
             <div className='lg:pl-4'>
-              <p className='text-xl lg:text-2xl'>Saam Club de Mar</p>
+              <p className='text-lg lg:text-2xl'>Saam Club de Mar</p>
               <button className='underline decoration-wavy text-sm font-semibold normal-case tracking-wide'
                 onClick={toggleModal}>Consultar ubicación</button>
             </div>
           </div>
           <div className='w-1/2 lg:w-auto flex flex-col lg:flex-row items-center'>
             <img alt="" src={busIcon} className="w-16 lg:w-14 pb-2 lg:pb-0" />
-            <p className='lg:pl-4 normal-case'>Horario y lugar de recogida del autobús por determinar</p>
+            <p className='lg:pl-4 text-normal'>Horario y lugar de recogida del autobús por determinar</p>
           </div>
         </div>
       </div>
