@@ -37,7 +37,7 @@ export const Contact = () => {
   }
 
   return (
-    <div className='contactSection  bg-jungle-green' id="contact">
+    <div className='contactSection bg-jungle-green' id="contact">
       <img alt="" src={jungleImgMobile} className='lg:hidden'/>
       <img alt="" src={jungleImg} className='hidden lg:block'/>
       <div className='p-8 py-18 lg:pb-20 w-full flex flex-col  lg:flex-row-reverse justify-center text-white text-center lg:text-left' >
@@ -51,18 +51,18 @@ export const Contact = () => {
         <form className="w-full lg:w-96 border-2 lg:border-0 p-6 pt-8 lg:p-0" onSubmit={sendEmail}>
           <div class="relative" >
             <input
-              className="peer h-10 w-full bg-jungle-green border-0 border-b-2 border-white placeholder-transparent focus:placeholder:text-white-opacity focus:outline-none focus:border-b-2 focus:border-white" placeholder="Laura García"
+              className="peer h-10 w-full bg-jungle-green border-0 border-b-2 border-white placeholder:text-jungle-green focus:placeholder:text-white-opacity focus:outline-none focus:border-b-2 focus:border-white" placeholder="Laura García"
               id="name"
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
               name="contact_name"
             />
-            <label for="name" className="absolute left-0 -top-4 text-white transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-white peer-focus:text-sm">Nombre y apellidos</label>
+            <label for="name" className="absolute left-0 -top-4 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-white peer-focus:text-sm">Nombre y apellidos</label>
           </div>
           <div class="relative mt-12" >
             <input
-              className="peer h-10 w-full bg-jungle-green border-0 border-b-2 border-white placeholder-transparent focus:placeholder:text-white-opacity focus:outline-none focus:border-b-2 focus:border-white" placeholder="laura192@gmail.com"
+              className="peer h-10 w-full bg-jungle-green border-0 border-b-2 border-white placeholder:text-jungle-green focus:placeholder:text-white-opacity focus:outline-none focus:border-b-2 focus:border-white" placeholder="laura192@gmail.com"
               id="email"
               type="email"
               value={email}
