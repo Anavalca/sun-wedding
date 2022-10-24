@@ -9,7 +9,7 @@ export const HotelItem = ({element}) => {
       <p>{price}</p>
       <p>{info}</p>
       <a href={web}  target="_blank" title="enlace a la web" alt="enlace a la web"
-        className="underline decoration-wavy text-sm font-semibold tracking-wide pt-2" rel="noreferrer">Visitar web</a>
+        className="underline decoration-wavy text-sm font-semibold tracking-wide pt-2 w-fit hover:text-red hover:scale-105" rel="noreferrer">Visitar web</a>
       <p>{location}</p>
       <p className={`${isFull ? 'absolute top-6 right-6 text-sm text-white font-normal tracking-wide bg-red pr-2 pl-2 rounded-full' : 'hidden'}`}>COMPLETO</p>
     </div>

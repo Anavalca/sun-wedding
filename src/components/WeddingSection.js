@@ -12,7 +12,6 @@ import { Map } from './Map'
 
 export const WeddingSection = () => {
   
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleModal = () => {
@@ -43,7 +42,7 @@ export const WeddingSection = () => {
             <img alt="" src={locationIcon} className="w-16 lg:w-14 pb-2 lg:pb-0" />
             <div className='lg:pl-4'>
               <p className='text-lg lg:text-2xl'>Saam Club de Mar</p>
-              <button className='underline decoration-wavy text-sm font-semibold normal-case tracking-wide'
+              <button className='underline decoration-wavy text-sm font-semibold normal-case tracking-wide hover:text-jungle-green hover:scale-105'
                 onClick={toggleModal}>Consultar ubicación</button>
             </div>
           </div>
@@ -57,7 +56,6 @@ export const WeddingSection = () => {
       <Modal
         isOpen={isOpen}
         onRequestClose={toggleModal}
-        contentLabel='HOLA'
         ariaHideApp={false}
       >
         <Map

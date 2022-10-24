@@ -49,7 +49,7 @@ export const Contact = () => {
           <p className='font-light'>Puedes ponerte en contacto con nosotros o confirmar tu asistencia rellenando el siguiente formulario.</p>
         </div>
         <form className="w-full lg:w-96 border-2 lg:border-0 p-6 pt-8 lg:p-0" onSubmit={sendEmail}>
-          <div class="relative" >
+          <div className="relative" >
             <input
               className="peer h-10 w-full bg-jungle-green border-0 border-b-2 border-white placeholder:text-jungle-green focus:placeholder:text-white-opacity focus:outline-none focus:border-b-2 focus:border-white" placeholder="Laura García"
               id="name"
@@ -58,9 +58,9 @@ export const Contact = () => {
               onChange={(e) => setName(e.target.value)}
               name="contact_name"
             />
-            <label for="name" className="absolute left-0 -top-4 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-white peer-focus:text-sm">Nombre y apellidos</label>
+            <label htmlFor="name" className="absolute left-0 -top-4 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-white peer-focus:text-sm">Nombre y apellidos</label>
           </div>
-          <div class="relative mt-12" >
+          <div className="relative mt-12" >
             <input
               className="peer h-10 w-full bg-jungle-green border-0 border-b-2 border-white placeholder:text-jungle-green focus:placeholder:text-white-opacity focus:outline-none focus:border-b-2 focus:border-white" placeholder="laura192@gmail.com"
               id="email"
@@ -69,10 +69,10 @@ export const Contact = () => {
               onChange={(e) => setEmail(e.target.value)}
               name="contact_email"
             />
-            <label for="email" className="absolute left-0 -top-4 text-white transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-white peer-focus:text-sm">Email</label>
+            <label htmlFor="email" className="absolute left-0 -top-4 text-white transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-white peer-placeholder-shown:top-3 peer-focus:-top-4 peer-focus:text-white peer-focus:text-sm">Email</label>
           </div>
-          <div class="relative mt-14 text-left" >
-            <label for="email">Mensaje</label>
+          <div className="relative mt-14 text-left" >
+            <label htmlFor="email">Mensaje</label>
             <textarea
               className="mt-1 peer h-36 w-full bg-jungle-green border-2 border-white placeholder:text-white-opacity focus:outline-none focus:border-white"
               id="message"
@@ -89,7 +89,7 @@ export const Contact = () => {
           type="submit"
           value={`${submittedForm ? 'FORMULARIO ENVIADO' : 'ENVIAR'}`}
           disabled={!enableSubmit}  
-          class="mt-5 px-4 py-2 rounded text-jungle-green bg-white font-semibold text-center block w-full focus:outline-none focus:ring focus:ring-offset-2 focus:ring-rose-500 focus:ring-opacity-80 cursor-pointer" />
+          className="mt-5 px-4 py-2 rounded text-jungle-green bg-white font-semibold text-center block w-full focus:outline-none focus:ring focus:ring-offset-2 focus:ring-rose-500 focus:ring-opacity-80 cursor-pointer" />
         </form>
 
       </div>

@@ -1,38 +1,13 @@
-  .leaflet-container {
-    height: 100%;
-    width: 100%;
-    z-index: 3;
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  font-family: 'Quicksand', sans-serif;
 
-    .leaflet-popup-content{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-family: $textFont;
-
-      span{
-        font-size: 12px;
-        text-align: center;
-        @include forTablet {
-          font-size: 13px;
-        }
-      }
-
-      .markerTitle{
-        text-transform: uppercase;
-        font-size: 15px;
-        font-weight: 600;
-
-        @include forTablet {
-          font-size: 14px;
-        }
-      }
-
-      a{
-        color: $secondaryColor;
-      }
-
-    }
+  .leaflet-popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-
-
+}

@@ -24,10 +24,6 @@
     transform-origin: 0 0;
   }
 
-  @include forTablet {
-    padding-left: 20px;
-    display: none;
-  }
 }
 
 .open {
