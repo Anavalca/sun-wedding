@@ -13,6 +13,10 @@
   height: 42px;
   border-radius: 88rem;
 
+  @include forPc {
+    display: none;
+  }
+
   span {
     background-color: #4b4e50;
     width: 19px;
