@@ -5,16 +5,20 @@ import { Header } from './Header';
 import { Main } from './Main';
 import { Footer } from './Footer';
 import AOS from 'aos';
-AOS.init();
+AOS.init({
+  duration: 800,
+  delay: 100,
+  offset: 230
+});
 
 export const App = () => {
 
   return (
     <div>
-      <BurgerMenu/>
-      <Menu/>
+      <BurgerMenu />
+      <Menu />
       <Header />
-      <Main/>
+      <Main />
       <Footer />
     </div>
   );

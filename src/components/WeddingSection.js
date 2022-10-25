@@ -10,7 +10,6 @@ import { useState } from 'react';
 import Modal from 'react-modal'
 import { Map } from './Map'
 
-
 export const WeddingSection = () => {
   
   const [isOpen, setIsOpen] = useState(false);

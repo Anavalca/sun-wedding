@@ -3,8 +3,6 @@ import jungleImg from '../images/jungle.png'
 import contactIcon from '../icons/form.png'
 import emailjs from 'emailjs-com';
 import { useState } from "react";
-import AOS from 'aos';
-AOS.init();
 
 const YOUR_SERVICE_ID = "service_jb41tc9";
 const YOUR_TEMPLATE_ID = "template_e9uaova";
@@ -42,7 +40,7 @@ export const Contact = () => {
     <div className='contactSection bg-jungle-green' id="contact">
       <img alt="" src={jungleImgMobile} className='lg:hidden'/>
       <img alt="" src={jungleImg} className='hidden lg:block'/>
-      <div className='p-8 py-18 lg:pb-20 w-full flex flex-col lg:flex-row-reverse justify-center text-white text-center lg:text-left' data-aos="fade-up" data-aos-duration="4000">
+      <div className='p-8 py-18 lg:pb-20 w-full flex flex-col lg:flex-row-reverse justify-center text-white text-center lg:text-left' data-aos="fade-up">
         <div className='w-full lg:w-96 flex flex-col justify-center lg:border-l-2 lg:ml-9 lg:pl-9 pb-12 lg:pb-0'>
           <div className='flex flex-col lg:flex-row  items-center  w-full  pb-5 lg:pb-2'>
             <img alt="" src={contactIcon} className="w-16 mr-3 hidden lg:block" />
