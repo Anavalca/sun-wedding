@@ -24,7 +24,7 @@ export const WeddingSection = () => {
       <img alt='' src={wavesImg} className='hidden lg:block'/>
       <div className='p-8 pt-20 lg:pt-24 lg:pb-4 lg:m-auto lg:w-800 flex flex-col lg:flex-row justify-center items-start' id='wedding' data-aos='fade-up' data-aos-duration='2000' >
         <div className='w-full lg:w-1/2 lg:pr-7 pb-10 lg:pb-0 text-center lg:text-left lg:text-right'>
-          <h2 className='text-4xl lg:text-5xl pb-5 lg:pb-2 font-bold lg:pl-9'>¡Nos vamos de boda!</h2>
+          <h2 className='text-4xl lg:text-6xl pb-5 lg:pb-2 font-bold lg:pl-0'>¡Vamos de boda!</h2>
           <p className='font-light pb-3'>No podemos celebrar este día tan especial sin ti, por eso hemos montado una super fiesta en la playa a la que estás invitado.</p>
           <p className='font-light'>¡No te preocupes por nada! Iremos en autobús hasta el restaurante donde se celebrará todo el evento. ¿Te apuntas?</p>
           
