@@ -3,7 +3,7 @@ export const HotelItem = ({element}) => {
   const { icon, title, web, price, info, location, isFull } = element;
 
   return (
-    <div className={`p-5 lg:p-6 m-2 w-auto lg:w-85 h-72 bg-yellow-opacity flex flex-col items-left justify-between font-light drop-shadow ${isFull ? 'border-b-8 border-red' : ''}`}>
+    <div className={`p-5 lg:p-6 m-2 w-auto lg:w-85 h-72 bg-yellow-opacity flex flex-col items-left justify-between font-light drop-shadow ${isFull ? 'border-b-8 border-red' : ''}`} data-aos="fade-up">
       <img alt="" src={icon} className="w-14 pb-1"/>
       <h3 className="text-xl lg:text-2xl font-normal">{title}</h3>
       <p>{price}</p>
