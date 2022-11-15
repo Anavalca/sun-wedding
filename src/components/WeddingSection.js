@@ -48,7 +48,7 @@ export const WeddingSection = () => {
           </div>
           <div className='w-1/2 lg:w-auto flex flex-col lg:flex-row items-center'>
             <img alt='' src={busIcon} className='w-16 lg:w-14 pb-2 lg:pb-0' />
-            <p className='lg:pl-4 text-normal'>Horario y lugar de recogida del autobús por determinar</p>
+            <p className='lg:pl-4 text-normal'>Habrá un autobús desde el centro de Chipiona hasta el restaurante (horario y lugar de recogida por determinar)</p>
           </div>
         </div>
       </div>

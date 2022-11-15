@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "type":"hotel",
     "icon": "./images/hotel.png",
     "title": "Hotel Agaró",
     "web": "https://www.hotelagarochipiona.com/",
@@ -9,6 +10,7 @@
   },
   {
     "id": 2,
+    "type":"hotel",
     "icon": "./images/hotel.png",
     "title": "Hotel Paquita",
     "web": "https://hotel-paquita.reservahotel.top/",
@@ -18,6 +20,7 @@
   },
   {
     "id": 3,
+    "type":"hotel",
     "icon": "./images/hotel.png",
     "title": "Hotel Monterrey",
     "web": "https://www.booking.com/searchresults.es.html?aid=311090&label=monterrey-costa-chipiona-x0VEArpc4kRbbX_Mz0K7wQS625092775885%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-297601666275%3Akwd-11701422190%3Alp1005419%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcGt_tphEo8pawEozW2KQ80&sid=348eef55743e5050ec6eab7a11ec058b&city=-377988&expand_sb=1&highlighted_hotels=7086943&hlrd=no_dates&keep_landing=1&redirected=1&source=hotel&gclid=CjwKCAjwqJSaBhBUEiwAg5W9p6pMNUmDysvNdZmqufgHmK7TRtJR4u9Mr_zuhbLLnUGy18L8crHcYRoCSOQQAvD_BwE&room1=A,A,;",
@@ -26,6 +29,7 @@
   },
   {
     "id": 4,
+    "type":"apartament",
     "icon": "./images/apartament.png",
     "title": "Marina Luz Apartamentos",
     "web": "https://marinaluz.es/",
@@ -34,6 +38,7 @@
   },
   {
     "id": 5,
+    "type":"apartament",
     "icon": "./images/apartament.png",
     "title": "Apartamentos La plaza",
     "web": "https://apartamentoschipiona.com/",
@@ -42,6 +47,7 @@
   },
   {
     "id": 6,
+    "type":"hostel",
     "icon": "./images/hostel.png",
     "title": "Hostal Gran Capitán",
     "web": "http://www.hostalgrancapitan.com/",
