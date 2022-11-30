@@ -4,31 +4,31 @@ import data from '../data/hotelData.json'
 import { HotelItem } from './HotelItem';
 import { useState } from 'react';
 
+const CATEGORIES = [
+  {
+    text: "Hotel",
+    value: "hotel"
+  },
+  {
+    text: "Apartamento",
+    value: "apartament"
+  },
+  {
+    text: "Hostal",
+    value: "hostel"
+  }
+]
+
 export const HotelSection = () => {
-
-  const CATEGORIES = [
-    {
-      text: "Hotel",
-      value: "hotel"
-    },
-    {
-      text: "Apartamento",
-      value: "apartament"
-    },
-    {
-      text: "Hostal",
-      value: "hostel"
-    }
-  ]
-
-  const [categoriesState, setCategory] = useState({
+  const [categoryChecks, setCategoryChecks] = useState({
     hotel: true,
     apartament: true,
     hostel: true,
   });
+  // const [categoryChecks2, setCategoryChecks2] = useState(CATEGORIES.reduce((accumulate, current) => ({ ...accumulate, [current.value]: true }), {}));
 
   const changeCheckboxState = (e) => {
-    setCategory({ ...categoriesState, [e.target.value]: e.target.checked });
+    setCategoryChecks({ ...categoryChecks, [e.target.value]: e.target.checked });
   };
 
   return (
@@ -42,17 +42,17 @@ export const HotelSection = () => {
         <div className='flex pt-2'>
           {CATEGORIES.map((category, index) =>
             <div className='p-3 flex items-center' key={index}>
-              <input  className='mr-1 w-5 h-5 text-grey appearance-none cursor-pointer' onChange={changeCheckboxState}
+              <input className='mr-1 w-5 h-5 text-grey appearance-none cursor-pointer focus:shadow-none' onChange={changeCheckboxState}
                 value={category.value}
                 type="checkbox"
-                checked={categoriesState[category.value]} />
+                checked={categoryChecks[category.value]} />
               <label>{category.text}</label>
             </div>
           )}
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 pt-2'>
           {data
-            .filter(element => categoriesState[element.type])
+            .filter(element => categoryChecks[element.type])
             .map(element =>
               <HotelItem element={element} key={element.id} />
             )}
