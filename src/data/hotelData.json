@@ -5,8 +5,8 @@
     "icon": "./images/hotel.png",
     "title": "Hotel Agaró",
     "web": "https://www.hotelagarochipiona.com/",
-    "price": "Pendiente de actualizar precios",
-    "info":"Contaremos con un código de descuento para los invitados"    
+    "price": "Dispone de código de descuento: BODAC3",
+    "info":"Al realizar la reserva debes introducir el código en la casilla PROMOCODE y se aplicará el descuento."    
   },
   {
     "id": 2,
