@@ -1,5 +1,6 @@
 import wavesImgMobile from '../images/waves-m.png'
 import wavesImg from '../images/waves2.png'
+import giftImg from '../images/uapo.jpeg'
 import calendarIcon from '../icons/calendar.png'
 import clockIcon from '../icons/wall-clock.png'
 import locationIcon from '../icons/location.png'
@@ -54,9 +55,18 @@ export const WeddingSection = () => {
       </div>
       <div className='m-8 w-auto lg:w-800 mt-5 lg:mt-12 p-5 lg:mb-5 border-2' data-aos='fade-up' >
         <h4 className='text-3xl font-bold lg:pl-0'>Preboda</h4>
-        <p className='font-light'>El viernes, 2 de junio, os esperamos en la playa de Regla para disfrutar de unas cervezas fresquitas juntos. ¡Nada de dresscode ni tacones! Previamente se hará una ofrenda a la Virgen de Regla en el Santuario.</p>
+        <p className='font-light'>El viernes, 2 de junio, os esperamos a partir de las 19:30h para compartir unas cañas juntos (sitio por confirmar). ¡Nada de dresscode ni tacones! Previamente se hará una ofrenda a la Virgen de Regla en el Santuario.</p>
         <p className='font-light'></p>
       </div>
+      <div className='m-8 w-auto lg:w-800 bg-white rounded lg:rounded-full flex flex-col lg:flex-row justify-center items-center mt-5 p-5 lg:p-2' data-aos='fade-up' data-aos-duration='2000' >
+        <a href='https://www.fundacionuapo.org/' target="_blank" rel="noopener noreferrer">
+          <img alt='' src={giftImg} className='max-w-none h-14 lg:h-11 lg:pl-2' />
+        </a>
+        <p className='text-grey text-xs lg:pl-3'>Pensamos que otra forma de festejar este día es compartir esa alegría con un gesto solidario. Por este motivo, en lugar de ofrecerte un simple objeto, hemos decidido donar ese dinero a la
+          <a href='https://www.fundacionuapo.org/' target="_blank" rel="noopener noreferrer" className='font-semibold'> Fundación UAPO </a>
+          de Granada.</p>
+      </div>
+
       {/* POP UP */}
       <Modal
         isOpen={isOpen}
