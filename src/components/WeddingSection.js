@@ -23,7 +23,7 @@ export const WeddingSection = () => {
     <div className='text-white bg-sea-blue flex flex-col items-center' id='wedding'>
       <img alt='' src={wavesImgMobile} className='lg:hidden' />
       <img alt='' src={wavesImg} className='hidden lg:block' />
-      <div className='p-8 pt-20 lg:pt-24 lg:pb-4 lg:w-800 flex flex-col lg:flex-row justify-center items-start'  data-aos='fade-up' data-aos-duration='2000' >
+      <div className='p-8 pt-20 lg:pt-24 lg:pb-4 lg:w-800 flex flex-col lg:flex-row justify-center items-start' data-aos='fade-up' data-aos-duration='2000' >
         <div className='w-full lg:w-1/2 lg:pr-7 pb-10 lg:pb-0 text-center lg:text-left lg:text-right'>
           <h2 className='text-4xl lg:text-6xl pb-5 lg:pb-2 font-bold lg:pl-0'>¡Vamos de boda!</h2>
           <p className='font-light pb-3'>No podemos celebrar este día tan especial sin ti, por eso hemos montado una super fiesta en la playa a la que estás invitado.</p>
@@ -47,22 +47,24 @@ export const WeddingSection = () => {
                 onClick={toggleModal}>Consultar ubicación</button>
             </div>
           </div>
-          <div className='w-1/2 lg:w-auto flex flex-col lg:flex-row items-center'>
+          <div  id="prewedding" className='w-1/2 lg:w-auto flex flex-col lg:flex-row items-center'>
             <img alt='' src={busIcon} className='w-16 lg:w-14 pb-2 lg:pb-0' />
             <p className='lg:pl-4 text-normal'>Habrá un autobús desde el centro de Chipiona hasta el restaurante (horario y lugar de recogida por determinar)</p>
           </div>
         </div>
       </div>
-      <div className='m-8 w-auto lg:w-800 mt-5 lg:mt-12 p-5 lg:mb-5 border-2' data-aos='fade-up' >
+      <div  className='m-8 w-auto lg:w-800 mt-5 lg:mt-12 p-5 lg:mb-5 border-2' data-aos='fade-up' >
         <h4 className='text-3xl font-bold lg:pl-0'>Preboda</h4>
-        <p className='font-light'>El viernes, 2 de junio, os esperamos a partir de las 19:30h para compartir unas cañas juntos (sitio por confirmar). ¡Nada de dresscode ni tacones! Previamente se hará una ofrenda a la Virgen de Regla en el Santuario.</p>
+        <p className='font-light'>El viernes, 2 de junio, os esperamos a partir de las 18:30h en  
+        <a href='https://www.google.com/maps/place/Kiosco+Bar+San+Agust%C3%ADn,+P.%C2%BA+Costa+de+la+Luz,+19,+11550+Chipiona,+C%C3%A1diz/data=!4m2!3m1!1s0xd0e75a847b92c8d:0x52eb51ff6404ee4?utm_source=mstt_1&entry=gps&g_ep=CAESCTExLjcyLjMwMhgAIIgnKgBCAkVT' target='_blank' rel='noreferrer noopener' className='underline decoration-wavy text-lg font-semibold tracking-wide'> Kiosco Bar San Agustín </a> 
+        para disfrutar de unas cañas y picoteo. El sitio esta en la playa por eso.. ¡nada de dresscode ni tacones! Previamente se hará una ofrenda a la Virgen de Regla en el Santuario.</p>
         <p className='font-light'></p>
       </div>
       <div className='m-8 w-auto lg:w-800 bg-white rounded lg:rounded-full flex flex-col lg:flex-row justify-center items-center mt-5 p-5 lg:p-2' data-aos='fade-up' data-aos-duration='2000' >
         <a href='https://www.fundacionuapo.org/' target="_blank" rel="noopener noreferrer">
           <img alt='' src={giftImg} className='max-w-none h-14 lg:h-11 lg:pl-2' />
         </a>
-        <p className='text-grey text-xs lg:pl-3'>Pensamos que otra forma de festejar este día es compartir esa alegría con un gesto solidario. Por este motivo, en lugar de ofrecerte un simple objeto, hemos decidido donar ese dinero a la
+        <p className='text-grey text-sm lg:pl-3 lg:pr-2'>Pensamos que otra forma de festejar este día es compartir esa alegría con un gesto solidario. Por este motivo, en lugar de ofrecerte un simple objeto, hemos decidido donar ese dinero a la
           <a href='https://www.fundacionuapo.org/' target="_blank" rel="noopener noreferrer" className='font-semibold'> Fundación UAPO </a>
           de Granada.</p>
       </div>
