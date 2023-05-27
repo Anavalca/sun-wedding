@@ -55,9 +55,9 @@ export const WeddingSection = () => {
       </div>
       <div  className='m-8 w-auto lg:w-800 mt-5 lg:mt-12 p-5 lg:mb-5 border-2' data-aos='fade-up' >
         <h4 className='text-3xl font-bold lg:pl-0'>Preboda</h4>
-        <p className='font-light'>El viernes, 2 de junio, os esperamos a partir de las 18:30h en  
-        <a href='https://www.google.com/maps/place/Kiosco+Bar+San+Agust%C3%ADn,+P.%C2%BA+Costa+de+la+Luz,+19,+11550+Chipiona,+C%C3%A1diz/data=!4m2!3m1!1s0xd0e75a847b92c8d:0x52eb51ff6404ee4?utm_source=mstt_1&entry=gps&g_ep=CAESCTExLjcyLjMwMhgAIIgnKgBCAkVT' target='_blank' rel='noreferrer noopener' className='underline decoration-wavy text-lg font-semibold tracking-wide'> Kiosco Bar San Agustín </a> 
-        para disfrutar de unas cañas y picoteo. El sitio esta en la playa por eso.. ¡nada de dresscode ni tacones! Previamente se hará una ofrenda a la Virgen de Regla en el Santuario.</p>
+        <p className='font-light'>El viernes, 2 de junio, os esperamos a partir de las 20:00h en  
+        <a href='https://www.google.com/maps/place/Restaurante+El+Potalazo/@36.741266,-6.4392737,17z/data=!3m1!4b1!4m6!3m5!1s0xd0e750918ad7f41:0xe69dfd86020e49c0!8m2!3d36.741266!4d-6.4366988!16s%2Fg%2F11c0q_dzt2?entry=ttu' target='_blank' rel='noreferrer noopener' className='underline decoration-wavy text-lg font-semibold tracking-wide'> Restaurante El Portalazo </a> 
+        para disfrutar de unas cañas y picoteo. El sitio está al lado de la playa.. ¡nada de dresscode ni tacones! Previamente se hará una ofrenda a la Virgen de Regla en el Santuario.</p>
         <p className='font-light'></p>
       </div>
       <div className='m-8 w-auto lg:w-800 bg-white rounded lg:rounded-full flex flex-col lg:flex-row justify-center items-center mt-5 p-5 lg:p-2' data-aos='fade-up' data-aos-duration='2000' >
