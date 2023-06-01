@@ -13,7 +13,7 @@
     "type":"hotel",
     "icon": "./images/hotel.png",
     "title": "Hotel Paquita",
-    "web": "https://hotel-paquita.reservahotel.top/",
+    "web": "https://hostalpaquita.tureserva.top/",
     "price": "40€/noche - habitación doble",
     "info":"Es el más económico. Ubicado en el centro." ,
     "isFull":true

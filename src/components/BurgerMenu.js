@@ -19,6 +19,7 @@ export const BurgerMenu = () => {
             <a href='#home' className='p-3' onClick={() => setBurguerToogle(!burguerToogle)}>Inicio</a>
             <a href="#wedding" className='p-3' onClick={() => setBurguerToogle(!burguerToogle)}>La boda</a>
             <a href="#prewedding" className='p-3' onClick={() => setBurguerToogle(!burguerToogle)}>Preboda</a>
+            <a href="#photos" className='p-3' onClick={() => setBurguerToogle(!burguerToogle)}>Compartir fotos</a>
             <a href="#hotel" className='p-3' onClick={() => setBurguerToogle(!burguerToogle)}>Alojamientos</a>
             <a href="#contact" className='p-3' onClick={() => setBurguerToogle(!burguerToogle)}>Contacto</a>
           </nav>

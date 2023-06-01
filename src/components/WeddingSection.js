@@ -6,7 +6,7 @@ import clockIcon from '../icons/wall-clock.png'
 import locationIcon from '../icons/location.png'
 import busIcon from '../icons/bus.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faXmark, faUpload } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 import Modal from 'react-modal'
 import { Map } from './Map'
@@ -49,11 +49,11 @@ export const WeddingSection = () => {
           </div>
           <div  id="prewedding" className='w-1/2 lg:w-auto flex flex-col lg:flex-row items-center'>
             <img alt='' src={busIcon} className='w-16 lg:w-14 pb-2 lg:pb-0' />
-            <p className='lg:pl-4 text-normal'>Habrá un autobús desde el centro de Chipiona hasta el restaurante (horario y lugar de recogida por determinar)</p>
+            <p className='lg:pl-4 text-normal'>Habrá un autobús de ida y vuelta desde el centro de Chipiona hasta el restaurante. Recogida en Av. de Sevilla.</p>
           </div>
         </div>
       </div>
-      <div  className='m-8 w-auto lg:w-800 mt-5 lg:mt-12 p-5 lg:mb-5 border-2' data-aos='fade-up' >
+      <div id="photos" className='m-8 w-auto lg:w-800 mt-5 lg:mt-12 p-5 lg:mb-5 border-2' data-aos='fade-up' >
         <h4 className='text-3xl font-bold lg:pl-0'>Preboda</h4>
         <p className='font-light'>El viernes, 2 de junio, os esperamos a partir de las 20:00h en  
         <a href='https://www.google.com/maps/place/Restaurante+El+Potalazo/@36.741266,-6.4392737,17z/data=!3m1!4b1!4m6!3m5!1s0xd0e750918ad7f41:0xe69dfd86020e49c0!8m2!3d36.741266!4d-6.4366988!16s%2Fg%2F11c0q_dzt2?entry=ttu' target='_blank' rel='noreferrer noopener' className='underline decoration-wavy text-lg font-semibold tracking-wide'> Restaurante El Portalazo </a> 
@@ -68,6 +68,12 @@ export const WeddingSection = () => {
           <a href='https://www.fundacionuapo.org/' target="_blank" rel="noopener noreferrer" className='font-semibold'> Fundación UAPO </a>
           de Granada.</p>
       </div>
+
+        <a  href='https://photos.app.goo.gl/TuFmet19V1teu6QCA' target="_blank" rel="noopener noreferrer" 
+          className='flex flex-col mt-4' data-aos='fade-up' data-aos-duration='2000'>
+          <FontAwesomeIcon icon={faUpload} className='fa-2xl pb-2' />
+          <span className='text-2xl font-bold lg:pl-0'>Comparte tus fotos</span>
+        </a>
 
       {/* POP UP */}
       <Modal
